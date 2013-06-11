@@ -1,4 +1,4 @@
-\documentclass[a4paper, parskip = half]{scrartcl} % Dokuemntklasse
+\documentclass[a4paper, parskip=half]{scrartcl} % Dokuemntklasse
 \usepackage[utf8x]{inputenc} % Input Encoding
 \usepackage{ucs}
 \usepackage[ngerman]{babel} % Sprache für Rechtschreibung
@@ -7,29 +7,28 @@
 \usepackage{amssymb}
 \usepackage{graphicx}  % für Grafiken
 \usepackage{listings} % für Source Code Listing
-\usepackage{color}
+%\usepackage{color}
 
 \title{Beispiel Projekt} % Dokuemnt Titel 
 \author{Matthias Schett}
 \date{}
 
-\definecolor{mygreen}{rgb}{0,0.6,0}
-\definecolor{mygray}{rgb}{0.5,0.5,0.5}
-\definecolor{mymauve}{rgb}{0.58,0,0.82}
+%\definecolor{mygreen}{rgb}{0,0.6,0}
+%\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+%\definecolor{mymauve}{rgb}{0.58,0,0.82}
 
 \lstset{
-	frame=single, showstringspaces=false, numbers=left,
-	commentstyle=\color{mygreen},    % comment style
-	keywordstyle=\color{blue},       % keyword style
-	numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
-	stringstyle=\color{mymauve},     % string literal style
+	frame=single, showstringspaces=false, numbers=left
+	%commentstyle=\color{mygreen},    % comment style
+	%keywordstyle=\color{blue},       % keyword style
+	%numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+	%stringstyle=\color{mymauve},     % string literal style
 }
 
 \begin{document} % Ab hier beginnt das Dokument
 
 \maketitle  % Erstellt die Standardtitelseite - kann angepasst werden
 \tableofcontents % Erstellt das Inhaltsverzeichnis
-
 \newpage % Springt auf einen neue Seite
 \section{Neue Section} % Erstellt eine neue Überschrift 
 \subsection{Neue Subsection} % Erstellt eine neue Unterüberschrift
@@ -46,11 +45,11 @@ Aber es sind auch Differentialgleichungen kein Problem:
 \[ \frac{d^2}{dt^2}y(t) + 27 \frac{d}{dt} y(t) - 17 y(t) = 23 \sin{(\omega t)} \]
 
 %Quellcodelisting
-\begin{lstlisting}[language=C++]
+\begin{lstlisting}
 #include <iostream>
 
 using namespace std;
-//Hallo ich bin eni Kommentar
+
 int main(){
 	cout << "Hello World to Latex" << endl;
 
@@ -60,6 +59,7 @@ int main(){
 \end{lstlisting}
 
 Nun folgt noch eine kleine Tabelle:
+
 \begin{table}[htb]
 	\centering
     \begin{tabular}{ | l | p{7cm} | }
