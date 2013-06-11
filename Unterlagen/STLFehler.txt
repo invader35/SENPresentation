@@ -1,0 +1,10 @@
+1>c:\sw-entwicklung\fh\senpresentation\unterlagen\templateshift\templateshift.h(40): error C2440: '=' : cannot convert from 'std::string' to 'int'
+1>          No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+1>          c:\sw-entwicklung\fh\senpresentation\unterlagen\templateshift\main.cpp(37) : see reference to function template instantiation 'void Shift<std::_Vector_iterator<_Myvec>,std::string>(TItor,TItor,size_t,TValue)' being compiled
+1>          with
+1>          [
+1>              _Myvec=std::_Vector_val<std::_Simple_types<int>>,
+1>              TItor=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>,
+1>              TValue=std::string
+1>          ]
+1>

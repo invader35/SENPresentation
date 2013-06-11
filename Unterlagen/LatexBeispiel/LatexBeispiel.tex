@@ -1,0 +1,77 @@
+\documentclass[a4paper, parskip=half]{scrartcl} % Dokuemntklasse
+\usepackage[utf8x]{inputenc} % Input Encoding
+\usepackage{ucs}
+\usepackage[ngerman]{babel} % Sprache für Rechtschreibung
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}  % für Grafiken
+\usepackage{listings} % für Source Code Listing
+%\usepackage{color}
+
+\title{Beispiel Projekt} % Dokuemnt Titel 
+\author{Matthias Schett}
+\date{}
+
+%\definecolor{mygreen}{rgb}{0,0.6,0}
+%\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+%\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+	frame=single, showstringspaces=false, numbers=left
+	%commentstyle=\color{mygreen},    % comment style
+	%keywordstyle=\color{blue},       % keyword style
+	%numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+	%stringstyle=\color{mymauve},     % string literal style
+}
+
+\begin{document} % Ab hier beginnt das Dokument
+
+\maketitle  % Erstellt die Standardtitelseite - kann angepasst werden
+\tableofcontents % Erstellt das Inhaltsverzeichnis
+\newpage % Springt auf einen neue Seite
+\section{Neue Section} % Erstellt eine neue Überschrift 
+\subsection{Neue Subsection} % Erstellt eine neue Unterüberschrift
+
+Das ist ein neuer Text
+Hier gehts einfach weiter
+
+Hier gibts dann einen neuen Absatz
+\[ a = b^2 * \sqrt{\frac{c}{d}} \] % Mathe Formel
+
+Die kann man aber auch in einen Satz schreiben $ \int{\log{(\sin{(25x^2))}} \mathrm{d}x} $ 
+Aber es sind auch Differentialgleichungen kein Problem:
+
+\[ \frac{d^2}{dt^2}y(t) + 27 \frac{d}{dt} y(t) - 17 y(t) = 23 \sin{(\omega t)} \]
+
+%Quellcodelisting
+\begin{lstlisting}
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	cout << "Hello World to Latex" << endl;
+
+	cin.get();
+	return 0;
+}
+\end{lstlisting}
+
+Nun folgt noch eine kleine Tabelle:
+
+\begin{table}[htb]
+	\centering
+    \begin{tabular}{ | l | p{7cm} | }
+        \hline
+        Membername & Bedeutung \\ \hline \hline
+        difference\_type & Resultat einer Substraktion des Iterators mit einem anderen \\ \hline
+        value\_type & Welchen Typ beihnaltet der Iterator \\ \hline
+        pointer & Pointer Typ auf den der Iterator zeigen kann \\ \hline
+        reference & Referenz Typ auf den der Pointer zeigen kann \\ \hline
+        iterator\_category & Um welcher Iterator Typ handelt es sich (Output, Forward, Random-Access) \\ \hline
+    \end{tabular}
+    \caption{Member der Traitsklasse}\label{table:traitsMember}
+\end{table}
+
+\end{document}

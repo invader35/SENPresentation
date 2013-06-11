@@ -1,0 +1,405 @@
+\documentclass{beamer}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\usetheme{JuanLesPins}  %% Themenwahl
+\usecolortheme{beaver}
+
+\setbeamertemplate{bibliography entry title}{}
+\setbeamertemplate{bibliography entry location}{}
+\setbeamertemplate{bibliography entry note}{}
+
+\title{SEN Q\&A}
+\author{Matthias Schett}
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{Inhalt}
+    \tableofcontents[currentsection, hideallsubsections]
+  \end{frame}
+}
+
+\AtBeginSubsection[]
+{
+	\begin{frame}<beamer>
+    \frametitle{Inhalt}
+    \tableofcontents[currentsubsection]
+  \end{frame}	
+}
+
+\begin{document}
+\lstset{language=C++, showstringspaces=false, breaklines=true, numbers=left, frame=single} 
+
+
+\maketitle
+\frame{\tableofcontents[hideallsubsections]}
+
+\section{Gemeinsames Erarbeiten einer SEN UE}
+\subsection{Lesen der Aufgabenstellung}
+\begin{frame}[<+->][Label=analyse]
+	\frametitle{Erste Analyse}
+	\pause
+	\begin{itemize}
+		\item Wie viele Aufgaben sind enthalten
+		\item Haben die Aufgaben eine Abhängigkeit zueinander
+		\item Ist eine Schnittstelle gegeben?
+		\item Gibt es Vorgaben zur Formtierung des Inputs oder Outputs
+	\end{itemize}
+\end{frame}
+
+\subsection{Erste Gedanken zur Implementierung}
+\begin{frame}[<+->]\frametitle{Vorgaben}
+\pause
+	\begin{itemize}
+		\item Erste Lösungsgedanken für die Problemstellung machen
+		\item Wenn möglich alles in kleinere Teile aufteilen\footnote<.->{Erhöht in großen Projekten auch die Testbarkeit}
+		\item Klassenbasiert oder rein Funktionsbasiert?
+		\item Erste Gedanken über die Wahl der möglichen STL Algorithmen
+	\end{itemize}
+\end{frame}
+
+\subsection{Wahl der Methodik (TDD etc.)}
+\begin{frame}[<+->]\frametitle{Methodiken}
+%    Es gibt diverse Methoden um Software zu implementieren.
+%    Es gibt beispielweise folgende Methodiken:
+\pause
+    \begin{itemize}
+    	\item Test Driven Development
+    	\item Behavoir Driven Development (eine Abwandlung von TDD)
+    	\item Feature Driven Development
+    	\item etc.
+    \end{itemize}
+    \pause
+    Welche also wählen?
+\end{frame}
+
+\begin{frame}[<+->]\frametitle{Wahl der Methodik}
+	\pause
+	Abhängig von:
+	\begin{itemize}
+		\item Persönlicher Preferenz
+		\item Vorhanden Werkzeugen
+		\item evtl. Firmeninternen Vorgaben
+	\end{itemize}
+	\pause
+	Für unser Beispiel entscheinden wir uns für TDD
+\end{frame}
+
+\begin{frame}[<+->]\frametitle{Besonderheiten TDD}
+    Vorgehensweise:
+    \pause
+	\begin{enumerate}
+		\item Erstellen des Tests
+		\item Erste Implementierung bis erster Test erfolgreich
+		\item Refactoring (Verbesserungen usw.)
+		\item Testen bis wieder erfolgreich
+		\item Wieder zu Schritt 3 bis mit dem Algorihmus zufrieden 
+	\end{enumerate}
+\end{frame}
+
+\subsection{Implementierung}
+
+\begin{frame}[<+->]\frametitle{Klassendesign}
+    \pause
+    \begin{itemize}
+    	\item Was will man beschreiben?
+    	\item Aus welchen Teilen besteht es?
+    \end{itemize}
+    \pause
+    \begin{block}{Tipp 1:}
+    Gutes Klassendesign kann viel Arbeit sparen!
+    \end{block}
+    \pause
+    \begin{block}{Tipp 2:}
+    Funktions- und Membernamen dürfen ruhig lang sein\newline
+    Schlecht lesbar: BkAccDepBal\newline
+    Besser: BankAccountDepositBalance\newline
+    \end{block}
+\end{frame}
+
+\begin{frame}[<+->]\frametitle{KISS and DRY}
+    \pause
+    Drei wichtige Prinipien in der Softwareentwicklung:
+	\pause
+    \begin{itemize}
+    	\item KISS - Keep it simple stupid
+    	\item DRY - Don't repeat yourself
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}[<+->]\frametitle{KISS}
+    \pause
+    \begin{itemize}
+    	\item Nichts implementieren, dass nicht gefordert ist.
+    	\item Nichts implementieren, mit dem Hintergedanken, dass man das irgendwann mal brauchen könnte.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[<+->]\frametitle{DRY}
+    \pause
+    \begin{itemize}
+    	\item Kleine Wiederverwendbare Methoden/Klassens schreiben. (bzw. Alles in Module aufteilen)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[<+->]\frametitle{Quellcodeverwaltung}
+    \pause
+    Hat Quellcodeverwaltung bei so kleinen Projekten Sinn?
+    \pause
+    \begin{exampleblock}{}
+    	Quellcodeverwaltung mach immer Sinn
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}[<+->]\frametitle{Quellcodeverwaltung}
+    \pause
+    Vorteile von Quellcodeverwaltung
+    \pause
+    \begin{itemize}
+    	\item Änderungen ohne Sorgen
+    	\item Bei fehlerhaften Änderungen Problemfreies rückgängig machen.
+    	\item Leichteres Arbeiten im Team
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[<+->][Label=codeLab]\frametitle{Hands-on Code Lab}
+    \pause
+    Jetzt folgt der Praktische Teil!
+    Vorgehenweise:
+    \pause
+    \begin{itemize}
+    	\item Implemtierung des Testreibers
+    	\item Klassen Header schreiben
+    	\item Klasse implementieren
+    	\item Testen
+    \end{itemize}
+\end{frame}
+
+\section{Q\&A}
+
+%\subsection{Klassentemplates}
+
+\begin{frame}[fragile]\frametitle{Klassentemplates}
+    
+	\begin{lstlisting}
+		template <typename T>
+		class Calculator{
+		    T value;
+
+		    T getValue() const;
+		    setValue(const &T value);
+
+		    add(const &T value2);
+		    sub(const &T value2);
+		};
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Funktionspointer}
+    Implementierung:
+    \begin{lstlisting}
+	template <typename T>
+	bool compare(const &T a, const &T b){
+	    return a == b;
+	}
+    \end{lstlisting}
+    \pause
+    Verwendung:
+    \begin{lstlisting}
+	max_element(myVec.begin(), myVec.end(), compare); 
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Funktionsobjekte}
+    Implementierung:
+    \begin{lstlisting}
+		template <typename T>
+		class compare{
+		    bool operator() (const &T a, const &T b){
+		        return a == b;
+		    }
+		};
+    \end{lstlisting}
+    \pause
+    Verwendung:
+    \begin{lstlisting}
+	max_element(myVec.begin(), myVec.end(), compare()); 
+    \end{lstlisting}
+    \pause
+    \begin{alertblock}{Info:}
+        Es muss nicht unbedingt eine Klasse sein, es kann genauso gut eine Struktur verwendet werden! 
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}[<+->]\frametitle{Template Spezialisierung}
+    \pause
+    Wann benötigt?
+    \pause
+    \begin{itemize}
+    	\item Wenn der Compiler nicht von den Parametern bestimmen kann welcher Typ benötigt wird
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Beispiele Template Spezialiserung}
+	\framesubtitle{Keine Spezialisierung notwendig}
+	\pause    
+    Hier weiß der Compiler welcher Typ erwartet wird.
+    \begin{lstlisting}
+    	template <typename T>
+    	void setValue(T const & a){
+    		value = a;
+    	}
+    \end{lstlisting}
+
+    \pause
+    Aufruf:
+    \begin{lstlisting}
+    	int a, b;
+    	setValue(a, b);
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Beispiele Template Spezialiserung}
+	\framesubtitle{Spezialisierung notwendig}
+    \pause
+    Hier ist das ganze nicht klar
+    \begin{lstlisting}
+    	tempate <typename T>
+    	T getValue(){
+    		return ( a * pow(c, 2) );
+    	}
+    \end{lstlisting}
+
+    \pause
+    Aufruf:
+    \begin{lstlisting}
+    	int val = getValue<int>();
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[<+->]\frametitle{Verwendung Template Spezialiserung}
+    \begin{itemize}
+    	\item Funktoren
+    	\item Funktionsobjekte
+    	\item Metohden bei denen der Compiler den Typ nicht kennt.
+    \end{itemize}
+
+
+\end{frame}
+
+\begin{frame}[<+->]\frametitle{iterator\_traits}
+    \pause
+    \begin{itemize}[<+->]
+        \item Klasse die Eigenschaften von Iteratoren definiert
+        \item STL Algorithmen arbeiten häufig mit Traits um bestimmte Zustände (range, etc.) zu prüfen
+    \end{itemize}
+
+    \pause
+    \begin{table}[htb]
+        \begin{tabular}{ | l | p{7cm} | }
+            \hline
+            Membername & Bedeutung \\ \hline \hline
+            difference\_type & Resultat einer Substraktion des Iterators mit einem anderen \\ \hline
+            value\_type & Welchen Typ beihnaltet der Iterator \\ \hline
+            pointer & Pointer Typ auf den der Iterator zeigen kann \\ \hline
+            reference & Referenz Typ auf den der Pointer zeigen kann \\ \hline
+            iterator\_category & Um welcher Iterator Typ handelt es sich (Output, Forward, Random-Access) \\ \hline
+        \end{tabular}
+        \caption{Member der Traitsklasse\cite{cppRef}}\label{table:traitsMember}
+    \end{table}
+
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Verwendung iterator\_traits}
+    \pause
+    Beispiel: Herausfinden welchen Typ man bekommt für Output Iterator
+    \pause
+    \begin{lstlisting}
+	template <typename InputItor>
+	void superPrintFunction(InputItor begin, InputItor end){
+    	std::ostream_iterator<InputItor::value_type> out_it(std::cout, ",");
+
+	    std::copy(begin, end, out_it);
+	}
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{STL Fehler lesen}
+    Es ist nicht ganz einfach STL Fehler zu lesen
+    \begin{exampleblock}{Aber:}
+    Wenn man im Fehler einfach nach seinen eigenen Filenamen sucht, dann lässt sich das ganze recht leicht auflösen.
+    \end{exampleblock}
+\end{frame}
+
+\section{(Optional)Schreiben der Doku}
+\begin{frame}[<+->]\frametitle{Dokumentation}
+    Möglichkeiten:
+    \begin{itemize}
+    	\item WYSIWYG\footnote<.->{What you see is what you get} (Microsoft Word)
+    	\item WYSIWYM\footnote<.->{What you see is what you mean} (Latex)
+    \end{itemize}
+\end{frame}
+\subsection{Latex}
+\begin{frame}[<+->]\frametitle{Vorteile}
+    \pause
+    \begin{itemize}
+    	\item Quellcode lässt sich leicht einbinden.
+    	\item Keine Probleme bei Änderungen in der Fromatierungen
+    	\item Komplexe Mathematische Formeln relativ einfach möglich
+    	\item Sehr gute Satzqualität (vor allem bzgl. Wort und Zeilentrennung)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[<+->]\frametitle{Vorteile}
+	\begin{itemize}
+		\item Große Dokumente lassen sich auf kleine aufteilen und anschließend sehr einfach zusammenfügen
+		\item Ausgabeformate sind leicht austauschbar (PDF, DVI oder HTML Ausgabe)
+		\item Portabilität (Das Ergebnis sieht auf allen Systemen gleich aus.)
+		\item Läuft sowohl auf Windows, Linux und Mac
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[<+->]\frametitle{Nachteile}
+    \pause
+    \begin{itemize}
+    	\item Extrem steile Lernkurve
+    	\item Für das Ergebnis muss das Dokument zuerst durch den Compiler
+    	\item Tabellen umständlich
+    	\item Kein offizieler Support\footnote<.->{Es gibt aber eine sehr große und starke Community hinter Latex}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[<+->]\frametitle{Wie sieht ein Latex Dokument aus}
+    \pause
+    \begin{itemize}
+    	\item Besteht aus Präambel (quasi Header mit den Includes)
+    	\item Dem Document Body
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Beispiel Dokument}
+
+	Quellcodeanalyse Latex
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+        \frametitle{Quellen}
+        \nocite{stackOv}
+        \nocite{Meyers2011}
+        \nocite{martin2008clean}
+        \bibliographystyle{amsalpha}
+        \bibliography{Unterlagen/literature}
+\end{frame}
+
+
+\end{document}

@@ -1,0 +1,98 @@
+\beamer@endinputifotherversion {3.26pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\sectionentry {1}{Gemeinsames Erarbeiten einer SEN UE}{3}{Gemeinsames Erarbeiten einer SEN UE}{0}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\slideentry {1}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{Lesen der Aufgabenstellung}}\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\slideentry {1}{1}{1}{4/4}{Lesen der Aufgabenstellung}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{1}{2}{5/9}{Lesen der Aufgabenstellung}{0}}
+\headcommand {\beamer@framepages {5}{9}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{10}{Erste Gedanken zur Implementierung}}\headcommand {\beamer@subsectionpages {4}{9}}
+\headcommand {\slideentry {1}{2}{1}{10/10}{Erste Gedanken zur Implementierung}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\slideentry {1}{2}{2}{11/15}{Erste Gedanken zur Implementierung}{0}}
+\headcommand {\beamer@framepages {11}{15}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{16}{Wahl der Methodik (TDD etc.)}}\headcommand {\beamer@subsectionpages {10}{15}}
+\headcommand {\slideentry {1}{3}{1}{16/16}{Wahl der Methodik (TDD etc.)}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\slideentry {1}{3}{2}{17/23}{Wahl der Methodik (TDD etc.)}{0}}
+\headcommand {\beamer@framepages {17}{23}}
+\headcommand {\slideentry {1}{3}{3}{24/29}{Wahl der Methodik (TDD etc.)}{0}}
+\headcommand {\beamer@framepages {24}{29}}
+\headcommand {\slideentry {1}{3}{4}{30/35}{Wahl der Methodik (TDD etc.)}{0}}
+\headcommand {\beamer@framepages {30}{35}}
+\headcommand {\beamer@subsectionentry {0}{1}{4}{36}{Implementierung}}\headcommand {\beamer@subsectionpages {16}{35}}
+\headcommand {\slideentry {1}{4}{1}{36/36}{Implementierung}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\slideentry {1}{4}{2}{37/43}{Implementierung}{0}}
+\headcommand {\beamer@framepages {37}{43}}
+\headcommand {\slideentry {1}{4}{3}{44/47}{Implementierung}{0}}
+\headcommand {\beamer@framepages {44}{47}}
+\headcommand {\slideentry {1}{4}{4}{48/50}{Implementierung}{0}}
+\headcommand {\beamer@framepages {48}{50}}
+\headcommand {\slideentry {1}{4}{5}{51/52}{Implementierung}{0}}
+\headcommand {\beamer@framepages {51}{52}}
+\headcommand {\slideentry {1}{4}{6}{53/55}{Implementierung}{0}}
+\headcommand {\beamer@framepages {53}{55}}
+\headcommand {\slideentry {1}{4}{7}{56/60}{Implementierung}{0}}
+\headcommand {\beamer@framepages {56}{60}}
+\headcommand {\slideentry {1}{4}{8}{61/66}{Implementierung}{0}}
+\headcommand {\beamer@framepages {61}{66}}
+\headcommand {\sectionentry {2}{Q\&A}{67}{Q\&A}{0}}
+\headcommand {\beamer@sectionpages {3}{66}}
+\headcommand {\beamer@subsectionpages {36}{66}}
+\headcommand {\slideentry {2}{0}{9}{67/67}{}{0}}
+\headcommand {\beamer@framepages {67}{67}}
+\headcommand {\slideentry {2}{0}{10}{68/68}{}{0}}
+\headcommand {\beamer@framepages {68}{68}}
+\headcommand {\slideentry {2}{0}{11}{69/70}{}{0}}
+\headcommand {\beamer@framepages {69}{70}}
+\headcommand {\slideentry {2}{0}{12}{71/73}{}{0}}
+\headcommand {\beamer@framepages {71}{73}}
+\headcommand {\slideentry {2}{0}{13}{74/76}{}{0}}
+\headcommand {\beamer@framepages {74}{76}}
+\headcommand {\slideentry {2}{0}{14}{77/79}{}{0}}
+\headcommand {\beamer@framepages {77}{79}}
+\headcommand {\slideentry {2}{0}{15}{80/82}{}{0}}
+\headcommand {\beamer@framepages {80}{82}}
+\headcommand {\slideentry {2}{0}{16}{83/85}{}{0}}
+\headcommand {\beamer@framepages {83}{85}}
+\headcommand {\slideentry {2}{0}{17}{86/90}{}{0}}
+\headcommand {\beamer@framepages {86}{90}}
+\headcommand {\slideentry {2}{0}{18}{91/93}{}{0}}
+\headcommand {\beamer@framepages {91}{93}}
+\headcommand {\slideentry {2}{0}{19}{94/94}{}{0}}
+\headcommand {\beamer@framepages {94}{94}}
+\headcommand {\sectionentry {3}{(Optional)Schreiben der Doku}{95}{(Optional)Schreiben der Doku}{0}}
+\headcommand {\beamer@sectionpages {67}{94}}
+\headcommand {\beamer@subsectionpages {67}{94}}
+\headcommand {\slideentry {3}{0}{20}{95/95}{}{0}}
+\headcommand {\beamer@framepages {95}{95}}
+\headcommand {\slideentry {3}{0}{21}{96/97}{}{0}}
+\headcommand {\beamer@framepages {96}{97}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{98}{Latex}}\headcommand {\beamer@subsectionpages {95}{97}}
+\headcommand {\slideentry {3}{1}{1}{98/98}{Latex}{0}}
+\headcommand {\beamer@framepages {98}{98}}
+\headcommand {\slideentry {3}{1}{2}{99/103}{Latex}{0}}
+\headcommand {\beamer@framepages {99}{103}}
+\headcommand {\slideentry {3}{1}{3}{104/107}{Latex}{0}}
+\headcommand {\beamer@framepages {104}{107}}
+\headcommand {\slideentry {3}{1}{4}{108/112}{Latex}{0}}
+\headcommand {\beamer@framepages {108}{112}}
+\headcommand {\slideentry {3}{1}{5}{113/115}{Latex}{0}}
+\headcommand {\beamer@framepages {113}{115}}
+\headcommand {\slideentry {3}{1}{6}{116/116}{Latex}{0}}
+\headcommand {\beamer@framepages {116}{116}}
+\headcommand {\slideentry {3}{1}{7}{117/117}{Latex}{0}}
+\headcommand {\beamer@framepages {117}{117}}
+\headcommand {\beamer@partpages {1}{117}}
+\headcommand {\beamer@subsectionpages {98}{117}}
+\headcommand {\beamer@sectionpages {95}{117}}
+\headcommand {\beamer@documentpages {117}}
+\headcommand {\def \inserttotalframenumber {39}}

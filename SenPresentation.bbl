@@ -1,0 +1,25 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{Mey11}
+
+\bibitem[cpp]{cppRef}
+\emph{Cpp-reference (\url{http://www.cplusplus.com/})}, zuletzt besucht
+  03.06.2013 21:57.
+
+\bibitem[Mar08]{martin2008clean}
+R.C. Martin, \emph{Clean code: A handbook of agile software craftsmanship},
+  Pearson Education, 2008.
+
+\bibitem[Mey11]{Meyers2011}
+Scott Meyers, \emph{Effektiv c++ programmieren}, 3 ed., Addison-Wesley, 2011.
+
+\bibitem[sta]{stackOv}
+\emph{Stackoverflow (\url{http://www.stackoverflow.com/})}, zuletzt besucht
+  03.06.2013 20:53.
+
+\end{thebibliography}
