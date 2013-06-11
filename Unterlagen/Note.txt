@@ -1,0 +1,14 @@
+Präsi:
+
+Software Methodik (Test Driven Development)
+Warum das rad nicht neu erfinden?
+Wie gut sollte man die stl kenne
+Clean Code Paradigma + KISS and DRY
+
+Warum Quellcodeverwaltung
+Macht Quellcodeverwaltung bei so kleinen Dingen Sinn
+
+Software test möglichkeiten
+Welchen Vorteil hat Routine
+
+Nach getaner Implementierung folgt die Doku

@@ -254,17 +254,17 @@
 	\pause    
     Hier weiß der Compiler welcher Typ erwartet wird.
     \begin{lstlisting}
-    	template <typename T>
-    	void setValue(T const & a){
-    		value = a;
-    	}
+		template <typename T>
+		void setValue(T const & a){
+			value = a;
+		}
     \end{lstlisting}
 
     \pause
     Aufruf:
     \begin{lstlisting}
-    	int a, b;
-    	setValue(a, b);
+		int a, b;
+		setValue(a, b);
     \end{lstlisting}
 \end{frame}
 
@@ -273,16 +273,16 @@
     \pause
     Hier ist das ganze nicht klar
     \begin{lstlisting}
-    	tempate <typename T>
-    	T getValue(){
-    		return ( a * pow(c, 2) );
-    	}
+		tempate <typename T>
+		T getValue(){
+			return ( a * pow(c, 2) );
+		}
     \end{lstlisting}
 
     \pause
     Aufruf:
     \begin{lstlisting}
-    	int val = getValue<int>();
+		int val = getValue<int>();
     \end{lstlisting}
 \end{frame}
 
