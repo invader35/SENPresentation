@@ -1,0 +1,27 @@
+#include "Stock.h"
+
+template <typename T>
+T Stock<T>::getActualValue() const {
+    return mActualValue;
+}
+
+template <typename T>
+std::string const &Stock<T>::getName() const {
+    return mName;
+}
+
+template <typename T>
+void Stock<T>::setActualValue(T actualValue) {
+    mSharePrice.push_back(actualValue);
+    mActualValue = actualValue;
+}
+
+template <typename T>
+void Stock<T>::setName(std::string const &name){
+    mName = name;
+}
+
+template <typename T>
+void Stock<T>::simualteStockDay(T changeRate){
+    setActualValue(getActualValue() * changeRate);
+}
